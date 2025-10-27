@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+  color: #fff;
+ margin: 0;
+  padding: 0;
+  background: url('4.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: -1;
+}
+
+
+.navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #111;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.TCL {
+  padding-top: 120px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  text-align: center;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative; 
+  z-index: 1;
+  flex: 1 1 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.foreground-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.foreground-photo:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+
+.contact-text-content {
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: text-decoration 0.3s ease;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
+    
+.facebook-link {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.facebook-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.facebook-link a:hover {
+  color: #3b5998;
+}
+
+.facebook-link img {
+  width: 70px;
+  height: 70px;
+}
